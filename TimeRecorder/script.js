@@ -4,7 +4,7 @@ function record(){
   var m = date.getMinutes();
   var s = date.getSeconds();
   var time = h + ":" + m + ":" + s;
-  localStorage(time, "Recorded");
+  localStorage.setItem(time, "Recorded");
   alert();
 }
 
