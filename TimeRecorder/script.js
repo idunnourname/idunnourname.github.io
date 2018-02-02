@@ -1,8 +1,8 @@
 function record(){
   var date = new Date();
-  var h = date.getHours();
-  var m = date.getMinutes();
-  var s = date.getSeconds();
+  var h = date.getHours().toString();
+  var m = date.getMinutes().toString();
+  var s = date.getSeconds().toString();
   var time = h + ":" + m + ":" + s;
   alert(time);
   localStorage.setItem(time, "Recorded");
