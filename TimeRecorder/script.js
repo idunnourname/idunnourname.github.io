@@ -5,7 +5,7 @@ function record(){
   var s = date.getSeconds().toString();
   var time = h + ":" + m + ":" + s;
   alert(time);
-  localStorage.setItem(time, "Recorded");
+  localStorage.setItem("test", "Recorded");
   alert();
 }
 
@@ -13,5 +13,5 @@ for(var i in localStorage){
   var e = document.createElement("div");
   e.value = i;
   document.getElementById("recordbtn").append(e);
-  alert();
+  alert(e.value);
 }
