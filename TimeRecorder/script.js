@@ -6,3 +6,9 @@ function record(){
   var time = h + ":" + m + ":" + s;
   localStorage(time, "Recorded");
 }
+
+for(var i in localStorage){
+  var e = document.createElement("div");
+  e.value = i;
+  document.getElementById("recordbtn").append(e);
+}
