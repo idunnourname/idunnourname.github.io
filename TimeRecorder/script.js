@@ -6,7 +6,7 @@ function record(){
   var time = h + ":" + m + ":" + s;
   alert(time);
   localStorage.setItem("test", "Recorded");
-  alert();
+  alert("end");
 }
 
 for(var i in localStorage){
